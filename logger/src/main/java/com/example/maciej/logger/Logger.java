@@ -1,4 +1,4 @@
-package com.example.logger;
+package com.example.maciej.logger;
 
 import android.util.Log;
 

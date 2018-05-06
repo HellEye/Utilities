@@ -8,7 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.widget.NumberPicker;
 
-import com.example.logger.Logger;
+import com.example.maciej.logger.Logger;
 
 /**
  * Dialog window for picking numbers
