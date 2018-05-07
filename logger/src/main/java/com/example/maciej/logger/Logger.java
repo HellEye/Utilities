@@ -13,7 +13,6 @@ public class Logger {
 		localAnnotation = className.substring(0,className.indexOf(".", 12));
 	}
 	private static String getPosition(Throwable th) {
-		//Log.i("Test", ""+th.getStackTrace()[1].getLineNumber());
 		StackTraceElement ste = th.getStackTrace()[1];
 		return "(" + ste.getFileName() + ":" + ste.getLineNumber() + ")";
 	}
@@ -37,7 +36,6 @@ public class Logger {
 	
 	public static void v(String tag, String message) {
 		Log.v("myApp"+String.format("%15s", tag), String.format("%-80s %s", getIndent(new Exception()) + message, getPosition(new Exception())));
-		getPosition(new Exception());
 	}//verbose
 	
 	public static void e(String tag, String message) {
